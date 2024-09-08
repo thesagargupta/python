@@ -140,3 +140,71 @@ for i in range(1, n+1):
     
 print(f)
 
+##star pattern
+
+n = int(input("Enter the number of rows: "))
+
+for i in range(1, n+1):
+    # Print spaces for left padding
+    print(" " * (n - i), end="")
+    
+    # Print stars in odd numbers
+    print("*" * (2 * i - 1))
+
+
+'''
+    *
+   ***
+  *****
+ *******
+**********
+
+'''
+
+################################################3
+
+n = int(input("Enter the number: "))
+
+for i in range (1, n+1):
+    for j in range (1, i+1):
+        print(" * ", end="")
+    print("") 
+    
+'''
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+'''   
+
+
+#########################################################3
+
+n = int(input("Enter the number: "))
+
+for i in range(1, n+1):
+    if(i==n or i==1):
+        print("*" * n, end="")
+    else:
+        print("*", end="")
+        print(" " * (n-2),end="")
+        print("*", end="")
+    print("")
+    
+    
+"""*****
+*   *
+*   *
+*   *
+*****"""
+
+
+# opposite multiplication table
+
+n= int(input("Enter the number: "))
+
+for i in range(1, 11):
+    print(f"{n}*{11-i} = ", (11-i)*n)
