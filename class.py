@@ -96,3 +96,27 @@ n.cube()
 n.root()       
 
 
+###creating class for train bookings
+
+import random
+class Train:
+    
+    def __init__(self,trainNo):
+        self.trainNo=trainNo
+        self.fro="RXL"
+        self.to="ANVT"
+        
+    def book(self):
+        print(f"ticket is boocked from {self.fro} to {self.to} with Train Number: {self.trainNo}")
+    
+    def getStatus(self):
+        print(f"Train number with {self.trainNo} running successfully, from {self.fro} to {self.to}.")
+    
+    def getFares(self):
+        print(f"ticket price from with train number {self.trainNo}. {self.fro} to {self.to} is {random.randint(1200, 2000)}")
+        
+        
+t = Train(15274)
+t.getStatus()
+t.getFares()
+t.book()
